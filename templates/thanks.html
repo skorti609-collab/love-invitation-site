@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, #090014, #260044, #10001c);
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 25px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(200, 130, 255, 0.3);
+            box-shadow: 0 0 40px rgba(160, 50, 255, 0.25);
+        }
+
+        .heart {
+            font-size: 65px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        h1 {
+            color: #e0aaff;
+            font-size: 32px;
+        }
+
+        p {
+            color: #f0e2ff;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .details {
+            margin: 25px 0;
+            padding: 15px;
+            border-radius: 15px;
+            background: rgba(168, 85, 247, 0.15);
+            color: #e9c8ff;
+            line-height: 1.8;
+        }
+
+        .love {
+            margin-top: 25px;
+            color: #ffb7e8;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+
+        <h1>Ура! Мы договорились! 💗</h1>
+
+        <p>
+            Я очень рад, что мы сможем провести это время вместе.
+            Для меня это действительно много значит.
+        </p>
+
+        <div class="details">
+            📅 Наша дата: <strong>{{ chosen_date }}</strong><br>
+            📍 Наш выбор: <strong>{{ place }}</strong>
+        </div>
+
+        <p>
+            Я хочу, чтобы ты знала:
+            ты очень важный для меня человек.
+            Я ценю тебя и хочу сделать тебя счастливой.
+        </p>
+
+        <div class="love">
+            Я тебя очень люблю! ❤️
+        </div>
+
+        <p>До нашей встречи! 🥰</p>
+    </div>
+</body>
+</html>
