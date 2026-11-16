@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Для Сашеньки 💜</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: radial-gradient(circle at top, #552477, #090610 75%);
+}
+.card {
+  width: min(100%, 600px);
+  padding: 35px 25px;
+  text-align: center;
+  background: #191222;
+  border: 1px solid #8b5caf;
+  border-radius: 25px;
+  box-shadow: 0 20px 70px #0009;
+}
+.heart { font-size: 55px; animation: pulse 1.5s infinite; }
+h1 { font-size: 36px; }
+h1 span { color: #d8a4ff; }
+p { color: #e5d8ed; line-height: 1.8; }
+.note {
+  padding: 18px;
+  background: #ffffff0c;
+  border-radius: 16px;
+}
+input, button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+input {
+  color: white;
+  background: #100b18;
+  border: 1px solid #a855f7;
+}
+button {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7e22ce, #c084fc);
+  cursor: pointer;
+}
+button:hover { transform: scale(1.02); }
+@keyframes pulse {
+  50% { transform: scale(1.15); }
+}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="heart">💜</div>
+  <p>ЭТО ПИСЬМО ТОЛЬКО ДЛЯ ТЕБЯ</p>
+  <h1>Сашенька,<br><span>моя дорогая</span></h1>
+
+  <div class="note">
+    <p>
+      Любимая, прости меня, если я тебя расстроил
+      или обидел. Мне правда жаль.
+      Ты очень дорога мне, и я не хочу,
+      чтобы между нами оставались грусть
+      или недосказанность.
+    </p>
+    <p>
+      Я хочу спокойно поговорить с тобой,
+      услышать тебя и, если ты захочешь,
+      провести вместе прекрасный день. ❤️
+    </p>
+  </div>
+
+  <h3>Можно пригласить тебя на встречу? 💗</h3>
+  <p>Выбери удобную для тебя дату:</p>
+
+  <form action="/place" method="POST">
+    <input
+      type="date"
+      name="date"
+      min="2026-11-26"
+      max="2026-12-05"
+      required
+    >
+    <button type="submit">Выбрать дату 💜</button>
+  </form>
+
+  <p>С теплом и любовью ✨</p>
+</main>
+</body>
+</html>
