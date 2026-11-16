@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Для тебя, Сашенька 💜</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: radial-gradient(circle at top, #642b85, #090610 75%);
+  overflow-x: hidden;
+}
+.card {
+  width: min(100%, 620px);
+  padding: 40px 25px;
+  text-align: center;
+  background: #191222;
+  border: 1px solid #a56bca;
+  border-radius: 25px;
+  box-shadow: 0 20px 70px #0009;
+  position: relative;
+}
+h1 {
+  color: #e0b5ff;
+  font-size: 38px;
+}
+p {
+  color: #eee0f8;
+  line-height: 1.9;
+  font-size: 17px;
+}
+.big-heart {
+  font-size: 75px;
+  animation: pulse 1.5s infinite;
+}
+.message {
+  background: #ffffff0d;
+  padding: 22px;
+  border-radius: 18px;
+  margin-top: 20px;
+}
+@keyframes pulse {
+  50% { transform: scale(1.15); }
+}
+button {
+  padding: 14px 25px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(90deg,#7e22ce,#c084fc);
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="big-heart">💜</div>
+
+  <h1>Сашенька!</h1>
+
+  <div class="message">
+    <p>Я очень рад, что ты выбрала провести этот день вместе со мной.</p>
+
+    <p>
+      Я хочу, чтобы ты всегда знала:
+      ты очень важна для меня.
+      Мне хочется дарить тебе улыбки,
+      заботу и счастливые моменты.
+    </p>
+
+    <p>
+      Я обещаю стараться лучше понимать тебя,
+      слышать тебя и беречь то хорошее,
+      что есть между нами.
+    </p>
+
+    <h1>Я тебя очень люблю! ❤️</h1>
+
+    <p>
+      Наша дата: {{ chosen_date }}<br>
+      Наш план: {{ place }}
+    </p>
+
+    <p>Спасибо, что ты есть в моей жизни. ✨</p>
+  </div>
+
+  <div style="font-size:30px;margin-top:20px">
+    💗 💜 💗 💜 💗
+  </div>
+</main>
+</body>
+</html>
